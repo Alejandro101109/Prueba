@@ -1,0 +1,151 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.header, .footer {
+    background-color: #004c8c; /* Azul oscuro de la marca */
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.header .logo h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #ffd700; /* Amarillo para el hover */
+}
+
+/* Secciones de Contenido */
+section {
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+.seccion-bienvenida h2, .seccion-texto h3, .seccion-video h3, .seccion-organigrama h3 {
+    color: #004c8c;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.imagen-container {
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+}
+
+.imagen-container img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #004c8c;
+    border-radius: 5px;
+}
+
+/* Estilos específicos para Misión y Visión */
+.container-mision-vision {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.container-mision-vision div {
+    flex: 1;
+    max-width: 400px;
+    background-color: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.container-mision-vision h4 {
+    color: #004c8c;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 0.5rem;
+}
+
+/* Estilos de Botones */
+button {
+    background-color: #ffd700;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffc400;
+}
+
+/* Estilos del Video */
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    border: 5px solid #004c8c;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos del Footer */
+.footer {
+    text-align: center;
+}
+
+.footer .contacto-info p {
+    margin: 0.5rem 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: underline;
+}
